@@ -1,76 +1,40 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portfolio
 
-> One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/prwtLJk/My.png" alt="My portfolio" border="0"></a>
+
+Welcome to My Portofolio
+
+- Project 1: Setup and mobile version skeleton
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS - Flexbox
+
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+- [Live demo](https://joseheco.github.io/My-Portfolio/)
 
+## Prerequisites
 
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Basic:
+  - HTML
+  - CSS
+  - Git
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@joseheco](https://github.com/joseheco)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/joseherreraco)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
