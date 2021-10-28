@@ -316,3 +316,157 @@ h3.button_project{
   font-size: 20px;
 }
 
+#contact-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f9f9fa;
+  margin-top: 2rem;
+  
+}
+ #contact-me h3{
+  align-self: center;
+  width: 288px;
+  font-family: Playfair Display, sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 0 1.1rem 0;
+  margin-top: 4rem;
+ }
+
+ #contact-me p{
+  align-self: center;
+  width: 288px;
+  height:63px;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 0 1.1rem 0;
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+ }
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form ul {
+  list-style: none;
+}
+
+
+input[name="name"], input[name="email-address"] {
+  width: 288px;
+  height: 52px;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+} 
+
+.mid{
+ position: relative;
+ outline: none;
+}
+
+input::placeholder {
+  color: #7d7c84;
+  position: absolute;
+  margin-top: 8px;
+  margin-right: 0.7rem;
+  margin-left: 5px;
+  font: Poppins, sans-serif;
+  font-size: 10px;
+  line-height: 15px;
+  padding: 0 0 0 10px;
+  line-height: 0.6rem;
+  text-align: left;
+}
+
+textarea {
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  width: 274px;
+  height: 112px;
+  border: 1px solid #dfdfe0;
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.contact-form ul li {
+  padding: 0.4rem;
+}
+
+.submit{
+  font: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  width: 288px;
+  height: 44px;
+  background-color: #1a2236;
+  border: none;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+  cursor: pointer;
+}
+
+.submit:active {
+  border: 2px solid #1a2236;
+}
+
+footer {
+  background-color: #1a2236;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer button {
+  background-color: #1a2236;
+  width: 258px;
+  height: 44px;
+  text-align: left;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+footer button h4{
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #92dcdc;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+  padding: 15px 0 0 0;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.social-media li {
+  flex-direction: row;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.social-media .fab {
+  color: white;
+}
