@@ -15,6 +15,7 @@ header {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 0.5rem;
+    transition: background 3s;
   }
   
   .main-img {
@@ -26,7 +27,7 @@ header {
     background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 3.5rem;
-    transition: background 3s;
+    transition: 5s;
   }
 
   h1 {
@@ -64,6 +65,20 @@ header {
     writing-mode: tb-rl;
     transform: rotate(-180deg);   
     margin-left: 6rem;
+    overflow: hidden;
+    margin: 0 auto;
+    letter-spacing: .05em;
+    animation: typing 2.5s steps(40, end);
+  }
+
+  @keyframes typing {
+    from {
+      height: 0
+    }
+
+    to {
+      height: 100%
+    }
   }
   
   .main {
