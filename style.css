@@ -55,11 +55,20 @@ header {
     border: 0;
     margin-top: -6rem;
   }
-
+  
+  .main h2 {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 400;
+    font-size: 110px;
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);   
+    margin-left: 6rem;
+  }
+  
   .main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
     gap: 0.5rem;
   }
   
@@ -69,6 +78,67 @@ header {
     grid-row-start: 1 ;
   }
 
+  .second-project {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .third-project {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  }
+
+  .fourth-project {
+    grid-column-start: 2;
+    grid-row-start: 4;
+  }
+  .five-project {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+  .six-project {
+    grid-column-start: 1;
+    grid-row-start: 4;
+  }
+
+  .lap-images_1 {
+    display:none;
+  }
+
+  .lap-images-1{
+    width: 100%;
+    background-size: 70%;
+    height: 300px;
+    background-repeat: no-repeat;
+   }
+
+   .lap-images_3{
+     display:none;
+   }
+
+   .lap-images-3 {
+    width: 140%;
+   }
+
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .flex li {
+    font-family: Poppins, sans-serif;
+    font-size: 10.13px;
+    font-style: normal;
+    font-weight: 300;
+    background-color: #98dede;
+    list-style: none;
+    padding: 0.5rem 0.7rem 0.5rem 0.6rem;
+    line-height: 0.6rem;
+    margin-right: 0.7rem;
+    text-align: left;
+  }
 }
 
 nav {
@@ -172,9 +242,12 @@ button.bottom:active {
   background-repeat: no-repeat;
   margin-bottom: 1.5rem;
 }
+
+.main {
+  align-self: center;
 }
 
-h2 {
+main section h2 {
   align-self: center;
   width: 288px;
   font-family: Playfair Display, sans-serif;
@@ -185,12 +258,34 @@ h2 {
   text-align: left;
   padding: 0 0 1.1rem 0;
   margin-bottom: 1rem;
+  margin-left: 1.3rem;
+}
+.lap-images-1 {
+  display: none;
 }
 
-section .main{
+.lap-images-3{
+  display: none;
+}
+
+.project {
+  align-self: center;
+  background-color:black;
+  margin-top: -0.4rem;
+}
+}
+
+section .main {
   display: -ms-grid;
   display: grid;
   grid-template-rows: 20% 20% 20% 20%;
+}
+
+.lap-images_1 {
+  width: 100%;
+  background-size: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
 }
 
 .lap-images {
@@ -198,14 +293,12 @@ section .main{
   background-size: 100%;
   height: 200px;
   background-repeat: no-repeat;
-  
 }
 
 .project {
   align-self: center;
   background-color:black;
   margin-top: -0.4rem;
-  
 }
 
 .project h3 {
@@ -221,6 +314,7 @@ section .main{
   margin-left: 1.7rem;
 }
 
+@media screen and (max-width: 490px){
 .flex {
   display: flex;
   justify-content: center;
@@ -238,6 +332,13 @@ section .main{
   line-height: 0.6rem;
   margin-right: 0.7rem;
   text-align: left;
+}
+
+.project {
+  align-self: center;
+  background-color:black;
+  margin-top: -0.4rem;
+}
 }
 
 button.button-project {
