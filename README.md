@@ -18,7 +18,7 @@ Welcome to My Portofolio
 
 ## Live Demo
 
-- [Live demo](https://joseheco.github.io/My-Portfolio/)
+- [Live demo](https://joseheco.github.io/My_Portfolio/)
 
 ## Prerequisites
 
