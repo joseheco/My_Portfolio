@@ -9,379 +9,381 @@ header {
 }
 }
 
+/* Desktop Setup display */
+
 @media screen and (min-width: 490px) {
-  header {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(3, auto);
-  }
+header {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, auto);
+}
+
+nav {
+  grid-column-start: 2 ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 4rem;
+  margin-top: 2.5rem;
+}
+
+nav button {
+  background:transparent;
+  border: 0;
+  color: #1a2236;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+}
+
+
+button.menu {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.main-img {
+  grid-column-start: 4 ;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-image: url("./images/desktop_main.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 3.5rem;
+}
+
+.main-img-2 {
+  grid-column-start: 3;
+  grid-row-start: 4;
+  background-image: url("./images/projecto-puntos-8.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 110px;
+  line-height: 110px;
+}
+
+.container p {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  font-size: 14px;
   
-  nav {
-    grid-column-start: 2 ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-    gap: 4rem;
-    margin-top: 2.5rem;
-  }
+}
 
-  nav button {
-    background:transparent;
-    border: 0;
-    color: #1a2236;
-    font-size: 16px;
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-  }
- 
+.container button {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  font-size: 16px;
+  font-style: normal;
+  width: 190px;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  background-color: #1a2236;
+  border: 0;
+  margin-top: -6rem;
+}
 
-  button.menu {
-    display: none;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 0.5rem;
-  }
+.main {
+  display: grid;
+  grid-template-columns: 20% 5% 5% 24.5% 12.3% 12% 21.2%;
+  grid-template-rows: 31% 20% 12.9% 12.9% 15%;
   
-  .main-img {
-    grid-column-start: 4 ;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    background-image: url("./images/desktop_main.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 3.5rem;
-  }
+}
 
-  .main-img-2 {
-    grid-column-start: 3;
-    grid-row-start: 4;
-    background-image: url("./images/projecto-puntos-8.png");
-    background-size: 90%;
-    background-repeat: no-repeat;
-  }
+.main h2 {
+  font-family: Playfair Display, sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);   
+  margin-left: 6rem;
+  margin-bottom: 7.2rem;
+}
 
-  h1 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    font-size: 110px;
-    line-height: 110px;
-  }
+.first-project {
+  grid-column-start: 4;
+  grid-column-end: 8 ;
+  grid-row-start: 1 ;
+  margin-top: 5.3rem;
+}
 
-  .container p {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    font-size: 14px;
-    
-  }
+.second-project {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  margin-top: 10.6rem;
+}
 
-  .container button {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    font-size: 16px;
-    font-style: normal;
-    width: 190px;
-    height: 50px;
-    line-height: 50px;
-    color: white;
-    background-color: #1a2236;
-    border: 0;
-    margin-top: -6rem;
-  }
+.third-project {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+}
+
+.fourth-project {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
   
-  .main h2 {
-    font-family: Playfair Display, sans-serif;
-    font-weight: 400;
-    font-size: 100px;
-    writing-mode: tb-rl;
-    transform: rotate(-180deg);   
-    margin-left: 6rem;
-    margin-bottom: 7.2rem;
+}
+.five-project {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-top: 3rem;
+}
+.six-project {
+  display:none;
+}
+
+.project-geo-1{
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  background-image: url("./images/project-geo-1.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  margin-bottom: -1rem;
+  background-position: top;
+  background-position: right;
+}
+
+.project-geo-3 {
+  grid-column-start:1;
+  grid-row-start: 5;
+  background-image: url("./images/project-geo-3.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: top;
+}
+
+.project-geo-6 {
+  grid-column-start:7;
+  grid-row-start: 4;
+  background-image: url("./images/project-geo-6.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.project-geo-7 {
+  grid-column-start:5;
+  grid-row-start: 4;
+  background-image: url("./images/project-geo-7.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-position-x: left;
+}
+
+.project-geo-circle {
+  grid-column-start:4;
+  grid-row-start: 5;
+  background-image: url("./images/project-geo-circle.png");
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position-x:right;
+}
+
+.projec-puntos{
+  grid-column-start:2;
+  grid-column-end: 4;
+  background-image: url("./images/projecto-puntos-8.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  margin-top: 5.3rem;
+}
+
+.lap-images_1 {
+  display:none;
+}
+
+.lap-images-1{
+  width: 100%;
+  background-size: 70%;
+  height: 300px;
+  background-repeat: no-repeat;
   }
+
+.lap-images_3{
+  display:none;
+}
+
+.lap-images-3 {
+width: 100%;
+
+}
+
+.lap-images_5 {
+  display:none;
+}
+
+.lap-images-5 {
+width: 100%;
+height: 100%;
+margin-top: 4rem ;
+background-repeat: no-repeat;
+}
+
+.project {
+  display:none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
   
-  .main {
-    display: grid;
-    grid-template-columns: 20% 5% 5% 24.5% 12.3% 12% 21.2%;
-    grid-template-rows: 31% 20% 12.9% 12.9% 15%;
-    
-  }
-  
-  .first-project {
-    grid-column-start: 4;
-    grid-column-end: 8 ;
-    grid-row-start: 1 ;
-    margin-top: 5.3rem;
-  }
+}
 
-  .second-project {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    margin-top: 10.6rem;
-  }
+.flex li {
+  font-family: Poppins, sans-serif;
+  font-size: 10.13px;
+  font-style: normal;
+  font-weight: 300;
+  background-color: #98dede;
+  list-style: none;
+  padding: 0.5rem 0.7rem 0.5rem 0.6rem;
+  line-height: 0.6rem;
+  margin-right: 0.7rem;
+  text-align: left;
+}
 
-  .third-project {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 3;
-  }
+.project-1 {
+  display: flex;
+  flex-direction: column;    
+  background-color:black;
+  margin-top: -0.4rem;
+}
 
-  .fourth-project {
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    
-  }
-  .five-project {
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-top: 3rem;
-  }
-  .six-project {
-    display:none;
-  }
+.project-1 h3 {
+  font-family: Poppins, sans-serif;
+  font-size: 60px;
+}
 
-  .project-geo-1{
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    background-image: url("./images/project-geo-1.png");
-    background-size: 85%;
-    background-repeat: no-repeat;
-    margin-bottom: -1rem;
-    background-position: top;
-    background-position: right;
-  }
+.project-1 .flex{
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
 
-  .project-geo-6 {
-    grid-column-start:7;
-    grid-row-start: 4;
-    background-image: url("./images/project-geo-6.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-  }
 
-  .project-geo-7 {
-    grid-column-start:5;
-    grid-row-start: 4;
-    background-image: url("./images/project-geo-7.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position:bottom;
-    background-position-x: left;
-  }
-  
-  .project-geo-3 {
-    grid-column-start:1;
-    grid-row-start: 5;
-    background-image: url("./images/project-geo-3.png");
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position-x: top;
-  }
 
-  .project-geo-circle {
-    grid-column-start:4;
-    grid-row-start: 5;
-    background-image: url("./images/project-geo-circle.png");
-    background-size: 20%;
-    background-repeat: no-repeat;
-    background-position-x:right;
-  }
+.project-1 h3 {
+  width: 726px;
+  font-family: Poppins, sans-serif;
+  font-size: 60px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 2.3rem;
+  color: white;
+  margin-left: 1.7rem;
+  margin-top: 1rem;
+}
 
-  .projec-puntos{
-    grid-column-start:2;
-    grid-column-end: 4;
-    background-image: url("./images/projecto-puntos-8.png");
-    background-size: 110%;
-    background-repeat: no-repeat;
-    margin-top: 5.3rem;
-  }
+.project-5 {
+  align-self: center;
+  background-color:black;
+  margin-top: -0.4rem;
+}
 
-  .lap-images_1 {
-    display:none;
-  }
-  
-  .lap-images-1{
-    width: 100%;
-    background-size: 70%;
-    height: 300px;
-    background-repeat: no-repeat;
-   }
+.project-5 h3 {
+  width: 411px;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  color: white;
+  margin-left: 1.7rem;
+}
 
-   .lap-images_3{
-     display:none;
-   }
+button.button-project {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  width: 180px;
+  line-height:45px;
+  color: black;
+  background-color: white;
+  border: 0;
+  margin-bottom: 1.3rem;
+  border: 1px solid white;
+  margin-left: 1.7rem;
+}
 
-   .lap-images-3 {
-    width: 100%;
-    
-   }
+button.button-project:hover {
+  background-color: white;
+  color: #1a2236;
+  border: 1px solid #1a2236;
+  cursor: pointer;
+}
 
-   .lap-images_5 {
-     display:none;
-   }
+button.button-project:active {
+  border: 2px solid white;
+}
 
-   .lap-images-5 {
-    width: 100%;
-    height: 100%;
-    margin-top: 4rem ;
-    background-repeat: no-repeat;
-   }
+.about {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: 100%;
+}
 
-   .project {
-     display:none;
-   }
+.information {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  margin-bottom: 11rem;
+}
 
-  .flex {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    
-  }
-  
-  .flex li {
-    font-family: Poppins, sans-serif;
-    font-size: 10.13px;
-    font-style: normal;
-    font-weight: 300;
-    background-color: #98dede;
-    list-style: none;
-    padding: 0.5rem 0.7rem 0.5rem 0.6rem;
-    line-height: 0.6rem;
-    margin-right: 0.7rem;
-    text-align: left;
-  }
+.tecnology {
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
 
-  .project-1{
-    display: flex;
-    flex-direction: column;    
-    background-color:black;
-    margin-top: -0.4rem;
-  }
+.tecnology {
+  display:grid;
+  grid-template-columns: 288px 285px;
+  grid-template-rows: 39% 50%;
+  justify-content: stretch;
+}
 
-  .project-1 h3 {
-    font-family: Poppins, sans-serif;
-    font-size: 60px;
-  }
+#skills {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  width: 100%;
+}
 
-  .project-1 .flex{
-    justify-content: flex-start;
-    margin-left: 2rem;
-  }
-  
+#languages {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  width: 100%;
+}
 
-  
-  .project-1 h3 {
-    width: 726px;
-    font-family: Poppins, sans-serif;
-    font-size: 60px;
-    line-height: 48px;
-    font-style: normal;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 2.3rem;
-    color: white;
-    margin-left: 1.7rem;
-    margin-top: 1rem;
-  }
-  
-  .project-5 {
-    align-self: center;
-    background-color:black;
-    margin-top: -0.4rem;
-  }
-
-  .project-5 h3 {
-    width: 411px;
-    font-family: Poppins, sans-serif;
-    font-size: 30px;
-    line-height: 50px;
-    font-style: normal;
-    font-weight: 700;
-    text-align: left;
-    margin-bottom: 0.3rem;
-    color: white;
-    margin-left: 1.7rem;
-  }
-
-  button.button-project {
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    width: 180px;
-    line-height:45px;
-    color: black;
-    background-color: white;
-    border: 0;
-    margin-bottom: 1.3rem;
-    border: 1px solid white;
-    margin-left: 1.7rem;
-  }
-  
-  button.button-project:hover {
-    background-color: white;
-    color: #1a2236;
-    border: 1px solid #1a2236;
-    cursor: pointer;
-  }
-  
-  button.button-project:active {
-    border: 2px solid white;
-  }
-
-  .about {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: 100%;
-  }
-
-  .information {
-    grid-column-start: 4;
-    grid-row-start: 1;
-    margin-bottom: 11rem;
-  }
-
-  .tecnology {
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-
-  .tecnology {
-    display:grid;
-    grid-template-columns: 288px 285px;
-    grid-template-rows: 39% 50%;
-    justify-content: stretch;
-  }
-
-  #skills {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    width: 100%;
-  }
-
-  #languages {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    width: 100%;
-  }
-
-  .puntos {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-image: url('../images/image_dots_with_teal.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: 4rem;
-  }
+.puntos {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  background-image: url('../images/image_dots_with_teal.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 4rem;
+}
 
 #contact-me {
   display: flex;
@@ -450,11 +452,11 @@ header {
 }
 
 label {
-display: block;
-font-family: Poppins, sans-serif;
-font-weight: 400;
-color: #7d7c84;
-font-size: 12px;
+  display: block;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: #7d7c84;
+  font-size: 12px;
 }
 
 .contact-form ul .mid-name {
@@ -506,84 +508,74 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   place-items: center center;
-  }
-
-  footer button h4 {
-    margin-top: 1rem;
-  }
-
-  footer ul {
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
 }
 
+footer button h4 {
+  margin-top: 1rem;
+}
+
+footer ul {
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+}
+
+/* Mobil display */
 
 @media screen and (max-width: 490px){
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .container {
-    align-self: center;
-    width: 288px;
-  }
-
-  h1 {
-    font-size: 50px;
-    width: 220px;
-    height: 100px;
-    line-height: 50px;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 21px;
-    font-style: normal;
-    width: 270px;
-    letter-spacing: -0.6px;
-    margin-bottom: 35px;
-   }
-
-   .top-img {
-    background-image: url("./images/logo.png");
-    width: 100%;
-    background-size: 100%;
-    height: 90px;
-    width: 125px;
-    background-repeat: no-repeat;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  button.menu {
-    background-color: transparent;
-    border: transparent;
-    margin-right: 28px;
-    margin-top: -1rem;
-    
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
+nav button{
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  align-self: center;
+  width: 288px;
+}
 
 h1 {
-  font-family: Playfair Display, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  text-align: left;
-  padding: 0 0 1.1rem 0;
+  font-size: 50px;
+  width: 220px;
+  height: 100px;
+  line-height: 50px;
 }
 
 p {
-  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  width: 270px;
+  letter-spacing: -0.6px;
+  margin-bottom: 35px;
 }
 
-@media screen and (max-width: 490px){
+.top-img {
+  background-image: url("./images/logo.png");
+  width: 100%;
+  background-size: 100%;
+  height: 90px;
+  width: 125px;
+  background-repeat: no-repeat;
+}
+
+button.menu {
+  background-color: transparent;
+  border: transparent;
+  margin-right: 28px;
+  margin-top: -1rem;   
+}
+
 button.bottom {
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -595,20 +587,18 @@ button.bottom {
   border: 0;
   margin-bottom: 1.9rem;
 }
-
+  
 button.bottom:hover {
   background-color: white;
   color: #1a2236;
   border: 1px solid #1a2236;
   cursor: pointer;
 }
-
+  
 button.bottom:active {
   border: 2px solid #1a2236;
 }
-}
 
-@media screen and (max-width: 490px){
 .bottom-img {
   background-image: url("./images/image_geometry_below.png");
   width: 100%;
@@ -617,11 +607,11 @@ button.bottom:active {
   background-repeat: no-repeat;
   margin-bottom: 1.5rem;
 }
-
+  
 .main {
   align-self: center;
 }
-
+  
 main section h2 {
   align-self: center;
   width: 288px;
@@ -635,53 +625,19 @@ main section h2 {
   margin-bottom: 1rem;
   margin-left: 1.3rem;
 }
+
 .lap-images-1 {
   display: none;
 }
-
+  
 .lap-images-3 {
   display: none;
 }
-
+  
 .lap-images-5 {
   display: none;
 }
-
-.project {
-  align-self: center;
-  background-color:black;
-  margin-top: -0.4rem;
-}
-}
-
-.lap-images_1 {
-  width: 100%;
-  background-size: 100%;
-  height: 220px;
-  background-repeat: no-repeat;
-}
-
-.lap-images_3 {
-  width: 100%;
-  background-size: 100%;
-  height: 220px;
-  background-repeat: no-repeat;
-}
-
-.lap-images_5 {
-  width: 100%;
-  background-size: 100%;
-  height: 220px;
-  background-repeat: no-repeat;
-}
-
-.lap-images {
-  width: 100%;
-  background-size: 100%;
-  height: 220px;
-  background-repeat: no-repeat;
-}
-
+  
 .project {
   align-self: center;
   background-color:black;
@@ -701,31 +657,7 @@ main section h2 {
   margin-left: 1.7rem;
 }
 
-@media screen and (max-width: 490px){
-  nav button{
-    display: none;
-  }
-
-  .project {
-    align-self: center;
-    background-color:black;
-    margin-top: -0.4rem;
-  }
-  
-  .project h3 {
-    width: 264px;
-    font-family: Poppins, sans-serif;
-    font-size: 20px;
-    line-height: 50px;
-    font-style: normal;
-    font-weight: normal;
-    text-align: left;
-    margin-bottom: 0.3rem;
-    color: white;
-    margin-left: 1.7rem;
-  }
-
-  .flex {
+.flex {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
@@ -741,15 +673,14 @@ main section h2 {
   flex-direction: column;
 }
 
-
 #contact-me {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background-color: #f9f9fa;
   margin-top: 2rem;
-  
 }
+
  #contact-me h3{
   align-self: center;
   width: 288px;
@@ -787,10 +718,9 @@ main section h2 {
   list-style: none;
 }
 
-label{
+label {
   display:none;
 }
-
 
 input[name="name"], input[name="email-address"] {
   width: 288px;
@@ -799,7 +729,7 @@ input[name="name"], input[name="email-address"] {
   border-radius: 4px;
 } 
 
-.mid{
+.mid {
  position: relative;
  outline: none;
 }
@@ -859,6 +789,75 @@ button.button-project:hover {
 button.button-project:active {
   border: 2px solid white;
 }
+
+footer {
+  background-color: #1a2236;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+}
+
+/* General Setup for Desktop and Mobil version */ 
+
+h1 {
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  padding: 0 0 1.1rem 0;
+}
+
+p {
+  font-family: Poppins, sans-serif;
+}
+
+
+.lap-images_1 {
+  width: 100%;
+  background-size: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
+.lap-images_3 {
+  width: 100%;
+  background-size: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
+.lap-images_5 {
+  width: 100%;
+  background-size: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
+.lap-images {
+  width: 100%;
+  background-size: 100%;
+  height: 220px;
+  background-repeat: no-repeat;
+}
+
+.project {
+  align-self: center;
+  background-color:black;
+  margin-top: -0.4rem;
+}
+
+.project h3 {
+  width: 264px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  color: white;
+  margin-left: 1.7rem;
 }
 
 .flex li {
@@ -892,14 +891,9 @@ button.button-project:active {
   margin-top: -0.4rem;
 }
 
-
-
-
-
 .information{
   align-self: center;
 }
-
 
 .information h2 {
   align-self: center;
@@ -947,8 +941,6 @@ button.button-project:active {
 .information button.cv_button:active {
   border: 2px solid #1a2236;
 }
-
-
 
 #languages {
   width: 288px;
@@ -1016,7 +1008,6 @@ h3.button_project{
   font-size: 20px;
 }
 
-
 .submit{
   font: Poppins, sans-serif;
   font-size: 16px;
@@ -1039,15 +1030,6 @@ h3.button_project{
 
 .submit:active {
   border: 2px solid #1a2236;
-}
-
-@media screen and (max-width: 490px) {
-footer {
-  background-color: #1a2236;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 }
 
 footer button {
@@ -1084,4 +1066,3 @@ footer button h4{
 .social-media .fab {
   color: white;
 }
-
