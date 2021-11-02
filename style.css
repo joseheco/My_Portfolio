@@ -394,7 +394,7 @@
     margin-bottom: -11rem;
   }
 
-  #contact-me h3 {
+  #contact-me .get-started {
     align-self: center;
     width: 548px;
     font-family: Playfair Display, sans-serif;
@@ -674,7 +674,7 @@
     margin-top: 2rem;
   }
 
-  #contact-me h3 {
+  #contact-me .get-started {
     align-self: center;
     width: 288px;
     font-family: Playfair Display, sans-serif;
