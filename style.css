@@ -18,7 +18,7 @@
     grid-template-columns: repeat(3, auto);
   }
 
-  nav {
+  nav .mainMenu  {
     grid-column-start: 2;
     display: flex;
     justify-content: space-between;
@@ -26,9 +26,10 @@
     margin-bottom: 30px;
     gap: 4rem;
     margin-top: 2.5rem;
+    list-style: none;
   }
 
-  nav button {
+  nav .mainMenu li button {
     background: transparent;
     border: 0;
     color: #1a2236;
@@ -527,10 +528,7 @@
     margin-bottom: 30px;
   }
 
-  .mainMenu {
-    /*display: none;*/
-  }
-
+  
   main {
     display: flex;
     flex-direction: column;
@@ -541,13 +539,15 @@
     width: 288px;
   }
 
-  .openMenu {
+  nav .openMenu {
     display: block;
+    margin-right: 2rem;
+    cursor: pointer;
   }
 
-  nav .mainMenu .closeMenu {
-    font-size: 2rem;
+  nav .mainMenu, .closeMenu {
     display: none;
+    font-size: 15px;
     cursor: pointer;
   }
 
@@ -563,6 +563,47 @@
     align-items: center;
     transition: top 1s ease;
     display: none;
+    background-color: white;
+    list-style: none;
+  }
+
+  nav .mainMenu {
+    background-image: url('./images/img-menu-1.png'), url('./images/img-menu-2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom;
+  }
+  
+  nav .mainMenu li a {
+    background: transparent;
+    border: 0;
+    color: #1a2236;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  nav .mainMenu li {
+    margin-bottom: 2.5rem;
+    background: transparent;
+    border: 0;
+    color: #1a2236;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  
+  nav .mainMenu li a:hover {
+    background: linear-gradient(to right, lightgray, white);
+    font-size: 1.1rem;
+    text-decoration: none;
   }
 
   h1 {
@@ -588,6 +629,7 @@
     height: 90px;
     width: 125px;
     background-repeat: no-repeat;
+    background-position: top left;
   }
 
   button.bottom {

@@ -35,15 +35,15 @@
   <body>
     <header>
       <nav>
-        <ul class="mainMenu">
-          <li><button type="button" class="nav-1">Hello</button></li>
-          <li><button type="button" class="nav-2">Portfolio</button></li>
-          <li><button type="button" class="nav-3">About</button></li> 
-          <li><button type="button" class="nav-4">Contact</button></li>
+        <ul class="mainMenu" id="img-menu-2">
+          <li><a  href="#hello" class="nav-1">Hello</a></li>
+          <li><a  href="#project" class="nav-2">Portfolio</a></li>
+          <li><a  href="#about-menu" class="nav-3">About</a></li> 
+          <li><a  href="#contact-me" class="nav-4">Contact</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
         </ul>
         <a class="top-img"></a>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
-        <div class="closeMenu"><i class="fa fa-times"></i></div>
       </nav>
       <script src="menu-bottom.js"></script>
     </header>
@@ -51,7 +51,7 @@
       <section class="container">
         <a class="main-img"></a>
         <a class="main-img-2"></a>
-        <h1>Jose Herrera</h1>
+        <h1 id="hello">Jose Herrera</h1>
         <p>
           Hello! I am a software developer! I can help you build a product,
           feature or website. Take a look of my works. If you like what you see
@@ -60,7 +60,7 @@
         <button type="button" class="bottom">Start collaboration</button>
       </section>
       <a class="bottom-img"></a>
-      <section class="main">
+      <section class="main" id="project">
         <h2>Projects</h2>
         <a class="project-geo-1"></a>
         <a class="projec-puntos"></a>
@@ -195,7 +195,7 @@
       </section>
     </main>
     <section class="about">
-      <section class="information">
+      <section class="information" id="about-menu">
         <h2>About</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
@@ -329,5 +329,6 @@
         </li>
       </ul>
     </footer>
+  <script src="menu-bottom.js"></script>
   </body>
 </html>
