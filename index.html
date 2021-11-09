@@ -29,20 +29,23 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap"
       rel="stylesheet"
     />
+    
     <title>My Portfolio</title>
   </head>
   <body>
     <header>
       <nav>
-        <button type="button" class="nav-1">Hello</button>
-        <button type="button" class="nav-2">Portfolio</button>
-        <button type="button" class="nav-3">About</button>
-        <button type="button" class="nav-4">Contact</button>
+        <ul class="mainMenu">
+          <li><button type="button" class="nav-1">Hello</button></li>
+          <li><button type="button" class="nav-2">Portfolio</button></li>
+          <li><button type="button" class="nav-3">About</button></li> 
+          <li><button type="button" class="nav-4">Contact</button></li>
+        </ul>
         <a class="top-img"></a>
-        <button type="button" class="menu">
-          <img src="./images/menu.png" alt="menu boton" />
-        </button>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <div class="closeMenu"><i class="fa fa-times"></i></div>
       </nav>
+      <script src="menu-bottom.js"></script>
     </header>
     <main>
       <section class="container">

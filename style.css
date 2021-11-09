@@ -37,7 +37,11 @@
     font-style: normal;
   }
 
-  button.menu {
+  .openMenu {
+    display: none;
+  }
+
+  .closeMenu {
     display: none;
   }
 
@@ -523,8 +527,8 @@
     margin-bottom: 30px;
   }
 
-  nav button {
-    display: none;
+  .mainMenu {
+    /*display: none;*/
   }
 
   main {
@@ -535,6 +539,30 @@
   .container {
     align-self: center;
     width: 288px;
+  }
+
+  .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
   }
 
   h1 {
@@ -560,13 +588,6 @@
     height: 90px;
     width: 125px;
     background-repeat: no-repeat;
-  }
-
-  button.menu {
-    background-color: transparent;
-    border: transparent;
-    margin-right: 28px;
-    margin-top: -1rem;
   }
 
   button.bottom {
