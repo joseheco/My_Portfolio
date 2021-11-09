@@ -18,7 +18,7 @@
     grid-template-columns: repeat(3, auto);
   }
 
-  nav {
+  nav .mainMenu  {
     grid-column-start: 2;
     display: flex;
     justify-content: space-between;
@@ -26,9 +26,10 @@
     margin-bottom: 30px;
     gap: 4rem;
     margin-top: 2.5rem;
+    list-style: none;
   }
 
-  nav button {
+  nav .mainMenu li button {
     background: transparent;
     border: 0;
     color: #1a2236;
@@ -37,7 +38,11 @@
     font-style: normal;
   }
 
-  button.menu {
+  .openMenu {
+    display: none;
+  }
+
+  .closeMenu {
     display: none;
   }
 
@@ -523,10 +528,7 @@
     margin-bottom: 30px;
   }
 
-  nav button {
-    display: none;
-  }
-
+  
   main {
     display: flex;
     flex-direction: column;
@@ -535,6 +537,73 @@
   .container {
     align-self: center;
     width: 288px;
+  }
+
+  nav .openMenu {
+    display: block;
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+
+  nav .mainMenu, .closeMenu {
+    display: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
+    background-color: white;
+    list-style: none;
+  }
+
+  nav .mainMenu {
+    background-image: url('./images/img-menu-1.png'), url('./images/img-menu-2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom;
+  }
+  
+  nav .mainMenu li a {
+    background: transparent;
+    border: 0;
+    color: #1a2236;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  nav .mainMenu li {
+    margin-bottom: 2.5rem;
+    background: transparent;
+    border: 0;
+    color: #1a2236;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+  }
+  
+  nav .mainMenu li a:hover {
+    background: linear-gradient(to right, lightgray, white);
+    font-size: 1.1rem;
+    text-decoration: none;
   }
 
   h1 {
@@ -560,13 +629,7 @@
     height: 90px;
     width: 125px;
     background-repeat: no-repeat;
-  }
-
-  button.menu {
-    background-color: transparent;
-    border: transparent;
-    margin-right: 28px;
-    margin-top: -1rem;
+    background-position: top left;
   }
 
   button.bottom {
