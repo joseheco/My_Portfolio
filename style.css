@@ -74,6 +74,26 @@
     line-height: 110px;
   }
 
+  footer {
+    background-color: #1a2236;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center center;
+  }
+
+  footer button {
+    margin-top: 1rem;
+  }
+
+  .contact-form ul li {
+    padding: 0.4rem;
+  }
+
+  footer ul {
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
   .container p {
     grid-column-start: 2;
     grid-row-start: 3;
@@ -483,25 +503,6 @@
     padding-left: 15px;
   }
 
-  footer {
-    background-color: #1a2236;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center center;
-  }
-
-  footer button p {
-    margin-top: 1rem;
-  }
-
-  .contact-form ul li {
-    padding: 0.4rem;
-  }
-
-  footer ul {
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
 }
 
 /* Mobil display */
@@ -969,16 +970,6 @@ p {
   margin-bottom: 0.7rem;
 }
 
-.information p {
-  margin-bottom: 35px;
-  font-family: Poppins, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-style: normal;
-  width: 270px;
-  letter-spacing: -0.6px;
-}
-
 footer button {
   background-color: #1a2236;
   width: 258px;
@@ -986,9 +977,6 @@ footer button {
   text-align: left;
   border: none;
   margin-bottom: 2rem;
-}
-
-footer button p {
   font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -997,6 +985,16 @@ footer button p {
   margin-left: 3rem;
   margin-bottom: 2rem;
   padding: 15px 0 0 0;
+}
+
+.information p {
+  margin-bottom: 35px;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  width: 270px;
+  letter-spacing: -0.6px;
 }
 
 .information button {
@@ -1225,9 +1223,8 @@ input:focus {
   .pass {
     display: none;
   }
-
 }
- 
+
 @media screen and (min-width: 491px) {
   #nopopup {
     display: none;
