@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 @media screen and (max-width: 490px) {
   header {
     display: flex;
@@ -12,7 +13,7 @@
 /* Desktop Setup display */
 
 @media screen and (min-width: 490px) {
-    nav .mainMenu  {
+      nav .mainMenu {
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -134,6 +135,7 @@
     grid-column-end: 7;
     grid-row-start: 5;
   }
+
   .five-project {
     grid-column-start: 6;
     grid-column-end: 8;
@@ -141,6 +143,7 @@
     grid-row-end: 3;
     margin-top: 3rem;
   }
+
   .six-project {
     display: none;
   }
@@ -266,17 +269,6 @@
   .project-1 h3 {
     font-family: Poppins, sans-serif;
     font-size: 60px;
-  }
-
-  .project-1 .flex {
-    justify-content: flex-start;
-    margin-left: 2rem;
-  }
-
-  .project-1 h3 {
-    width: 726px;
-    font-family: Poppins, sans-serif;
-    font-size: 60px;
     line-height: 48px;
     font-style: normal;
     font-weight: 700;
@@ -285,6 +277,11 @@
     color: white;
     margin-left: 1.7rem;
     margin-top: 1rem;
+  }
+
+  .project-1 .flex {
+    justify-content: flex-start;
+    margin-left: 2rem;
   }
 
   .project-5 {
@@ -314,7 +311,6 @@
     line-height: 45px;
     color: black;
     background-color: white;
-    border: 0;
     margin-bottom: 1.3rem;
     border: 1px solid white;
     margin-left: 1.7rem;
@@ -344,17 +340,14 @@
   }
 
   .tecnology {
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-
-  .tecnology {
     display: grid;
     grid-template-columns: 288px 285px;
     grid-template-rows: 39% 50%;
     justify-content: stretch;
+    grid-column-start: 2;
+    grid-row-start: 1;
   }
-
+  
   #skills {
     grid-column-start: 1;
     grid-row-start: 2;
@@ -487,12 +480,7 @@
     border: 1px solid #dfdfe0;
     border-radius: 4px;
     padding-top: 15px;
-    padding-left: 15px;
-    font-size: 14px;
-  }
-
-  .contact-form ul li {
-    padding: 0.4rem;
+    padding-left: 15px; 
   }
 
   footer {
@@ -501,14 +489,18 @@
     grid-template-columns: 50% 50%;
     place-items: center center;
   }
-
+  
   footer button h4 {
     margin-top: 1rem;
   }
-
+  
   footer ul {
     gap: 1.5rem;
     margin-top: 2rem;
+  }
+
+  .contact-form ul li {
+    padding: 0.4rem;
   }
 }
 
@@ -522,7 +514,6 @@
     margin-bottom: 30px;
   }
 
-  
   main {
     display: flex;
     flex-direction: column;
@@ -539,7 +530,8 @@
     cursor: pointer;
   }
 
-  nav .mainMenu, .closeMenu {
+  nav .mainMenu,
+  .closeMenu {
     display: none;
     font-size: 15px;
     cursor: pointer;
@@ -559,9 +551,6 @@
     display: none;
     background-color: white;
     list-style: none;
-  }
-
-  nav .mainMenu {
     background-image: url('./images/img-menu-1.png'), url('./images/img-menu-2.png');
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom;
@@ -1258,7 +1247,6 @@ input:focus {
   }
 }  
     
-
 @media screen and (min-width: 491px) {
   #nopopup {
     display: none;
@@ -1272,7 +1260,6 @@ input:focus {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 10;
     flex-direction: column;
     justify-content: left;
     align-items: left;
@@ -1392,7 +1379,6 @@ input:focus {
     font-weight: 500;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 2rem;
     background: none transparent;
     border: 1px solid transparent;
     box-sizing: border-box;
@@ -1401,5 +1387,4 @@ input:focus {
     margin-top: 4rem;
     margin-bottom: 5rem;
   }
-
 }
