@@ -25,3 +25,13 @@ const overlay = document.querySelector('#overlay');
 openModal.addEventListener('click', showPop);
 closeModal.addEventListener('click', closePop);
 
+function showPop() {
+popUp.style.display = 'flex';
+popUp.style.top = '0';
+overlay.classList.add('active');
+}
+
+function closePop() {
+popUp.style.top = '-150%'
+overlay.classList.remove('active');
+}
