@@ -756,7 +756,15 @@
     list-style: none;
   }
 
-  .contact-form ul li {
+  .contact-form .mid-name {
+    padding: 0.4rem;
+  }
+
+  .contact-form .mid-email {
+    padding: 0.4rem;
+  }
+
+  .contact-form .mid-text {
     padding: 0.4rem;
   }
 
