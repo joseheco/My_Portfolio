@@ -33,3 +33,17 @@ function closePop() {
 
 openModal.addEventListener('click', showPop);
 closeModal.addEventListener('click', closePop);
+
+const form = document.querySelector('');
+const email = document.getElementById('');
+const error = document.querySelector('');
+const regExp = /^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g;
+
+form.addEventListener('submit', (event) => {
+if (regExp.test(email.value)) {
+error.innerHTML = '';
+} else {
+event.preventDefault();
+error.innerHTML = '';
+}
+});
