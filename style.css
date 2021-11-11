@@ -502,7 +502,6 @@
     padding-top: 15px;
     padding-left: 15px;
   }
-
 }
 
 /* Mobil display */
@@ -757,6 +756,10 @@
     list-style: none;
   }
 
+  .contact-form ul li {
+    padding: 0.4rem;
+  }
+
   label {
     display: none;
   }
@@ -797,10 +800,6 @@
     border-radius: 4px;
     padding-top: 15px;
     padding-left: 15px;
-  }
-
-  .contact-form ul li {
-    padding: 0.4rem;
   }
 
   button.button-project {
@@ -983,7 +982,6 @@ footer button {
   line-height: 24px;
   color: #92dcdc;
   margin-left: 3rem;
-  margin-bottom: 2rem;
   padding: 15px 0 0 0;
 }
 
