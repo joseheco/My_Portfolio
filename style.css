@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 @media screen and (max-width: 490px) {
   header {
     display: flex;
@@ -12,30 +13,24 @@
 /* Desktop Setup display */
 
 @media screen and (min-width: 490px) {
-  header {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(3, auto);
-  }
-
-  nav .mainMenu  {
-    grid-column-start: 2;
+  nav .mainMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3rem;
     align-items: center;
     margin-bottom: 30px;
-    gap: 4rem;
     margin-top: 2.5rem;
     list-style: none;
   }
 
-  nav .mainMenu li button {
+  nav .mainMenu li a {
     background: transparent;
     border: 0;
     color: #1a2236;
     font-size: 16px;
     font-family: Poppins, sans-serif;
     font-style: normal;
+    text-decoration: none;
   }
 
   .openMenu {
@@ -77,6 +72,34 @@
     grid-row-start: 2;
     font-size: 110px;
     line-height: 110px;
+  }
+
+  footer {
+    background-color: #1a2236;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center center;
+  }
+
+  footer button {
+    margin-top: 1rem;
+  }
+
+  .contact-form .mid-name {
+    padding: 0.4rem;
+  }
+
+  .contact-form .mid-email {
+    padding: 0.4rem;
+  }
+
+  .contact-form .mid-text {
+    padding: 0.4rem;
+  }
+
+  footer ul {
+    gap: 1.5rem;
+    margin-top: 2rem;
   }
 
   .container p {
@@ -140,6 +163,7 @@
     grid-column-end: 7;
     grid-row-start: 5;
   }
+
   .five-project {
     grid-column-start: 6;
     grid-column-end: 8;
@@ -147,6 +171,7 @@
     grid-row-end: 3;
     margin-top: 3rem;
   }
+
   .six-project {
     display: none;
   }
@@ -169,7 +194,7 @@
     background-image: url("./images/project-geo-3.png");
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position-x: top;
+    background-position: top;
   }
 
   .project-geo-6 {
@@ -272,17 +297,6 @@
   .project-1 h3 {
     font-family: Poppins, sans-serif;
     font-size: 60px;
-  }
-
-  .project-1 .flex {
-    justify-content: flex-start;
-    margin-left: 2rem;
-  }
-
-  .project-1 h3 {
-    width: 726px;
-    font-family: Poppins, sans-serif;
-    font-size: 60px;
     line-height: 48px;
     font-style: normal;
     font-weight: 700;
@@ -291,6 +305,11 @@
     color: white;
     margin-left: 1.7rem;
     margin-top: 1rem;
+  }
+
+  .project-1 .flex {
+    justify-content: flex-start;
+    margin-left: 2rem;
   }
 
   .project-5 {
@@ -320,7 +339,6 @@
     line-height: 45px;
     color: black;
     background-color: white;
-    border: 0;
     margin-bottom: 1.3rem;
     border: 1px solid white;
     margin-left: 1.7rem;
@@ -350,15 +368,12 @@
   }
 
   .tecnology {
-    grid-column-start: 2;
-    grid-row-start: 1;
-  }
-
-  .tecnology {
     display: grid;
     grid-template-columns: 288px 285px;
     grid-template-rows: 39% 50%;
     justify-content: stretch;
+    grid-column-start: 2;
+    grid-row-start: 1;
   }
 
   #skills {
@@ -494,27 +509,12 @@
     border-radius: 4px;
     padding-top: 15px;
     padding-left: 15px;
-    font-size: 14px;
   }
 
-  .contact-form ul li {
-    padding: 0.4rem;
-  }
-
-  footer {
-    background-color: #1a2236;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    place-items: center center;
-  }
-
-  footer button h4 {
-    margin-top: 1rem;
-  }
-
-  footer ul {
-    gap: 1.5rem;
-    margin-top: 2rem;
+  .errorMail {
+    position: fixed;
+    top: 68%;
+    left: 44%;
   }
 }
 
@@ -528,7 +528,6 @@
     margin-bottom: 30px;
   }
 
-  
   main {
     display: flex;
     flex-direction: column;
@@ -545,7 +544,8 @@
     cursor: pointer;
   }
 
-  nav .mainMenu, .closeMenu {
+  nav .mainMenu,
+  .closeMenu {
     display: none;
     font-size: 15px;
     cursor: pointer;
@@ -565,14 +565,11 @@
     display: none;
     background-color: white;
     list-style: none;
-  }
-
-  nav .mainMenu {
     background-image: url('./images/img-menu-1.png'), url('./images/img-menu-2.png');
     background-repeat: no-repeat, no-repeat;
     background-position: top left, bottom;
   }
-  
+
   nav .mainMenu li a {
     background: transparent;
     border: 0;
@@ -599,7 +596,7 @@
     top: 40px;
     right: 30px;
   }
-  
+
   nav .mainMenu li a:hover {
     background: linear-gradient(to right, lightgray, white);
     font-size: 1.1rem;
@@ -624,7 +621,6 @@
 
   .top-img {
     background-image: url("./images/logo.png");
-    width: 100%;
     background-size: 100%;
     height: 90px;
     width: 125px;
@@ -774,6 +770,18 @@
     list-style: none;
   }
 
+  .contact-form .mid-name {
+    padding: 0.4rem;
+  }
+
+  .contact-form .mid-email {
+    padding: 0.4rem;
+  }
+
+  .contact-form .mid-text {
+    padding: 0.4rem;
+  }
+
   label {
     display: none;
   }
@@ -797,9 +805,8 @@
     margin-top: 8px;
     margin-right: 0.7rem;
     margin-left: 5px;
-    font: Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 10px;
-    line-height: 15px;
     padding: 0 0 0 10px;
     line-height: 0.6rem;
     text-align: left;
@@ -815,11 +822,6 @@
     border-radius: 4px;
     padding-top: 15px;
     padding-left: 15px;
-    font-size: 14px;
-  }
-
-  .contact-form ul li {
-    padding: 0.4rem;
   }
 
   button.button-project {
@@ -830,7 +832,6 @@
     line-height: 45px;
     color: white;
     background-color: transparent;
-    border: 0;
     margin-bottom: 1.3rem;
     border: 1px solid white;
     margin-left: 1.7rem;
@@ -852,6 +853,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .errorMail {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -916,6 +922,37 @@ p {
   margin-left: 1.7rem;
 }
 
+.project-1 h3 {
+  width: 264px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  color: white;
+  margin-left: 1.7rem;
+}
+
+.project-5 h3 {
+  width: 264px;
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 0.3rem;
+  color: white;
+  margin-left: 1.7rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .flex li {
   font-family: Poppins, sans-serif;
   font-size: 10.13px;
@@ -927,12 +964,6 @@ p {
   line-height: 0.6rem;
   margin-right: 0.7rem;
   text-align: left;
-}
-
-.project {
-  align-self: center;
-  background-color: black;
-  margin-top: -0.4rem;
 }
 
 .project-1 {
@@ -963,6 +994,22 @@ p {
   padding: 0 0 1.1rem 0;
   margin-top: 4rem;
   margin-bottom: 0.7rem;
+}
+
+footer button {
+  background-color: #1a2236;
+  width: 258px;
+  height: 44px;
+  text-align: left;
+  border: none;
+  margin-bottom: 2rem;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #92dcdc;
+  margin-left: 3rem;
+  padding: 15px 0 0 0;
 }
 
 .information p {
@@ -1001,8 +1048,6 @@ p {
 #languages {
   width: 288px;
   line-height: 50px;
-  color: white;
-  background-color: #1a2236;
   border: 0;
   margin-bottom: 1.9rem;
   align-self: center;
@@ -1018,7 +1063,6 @@ p {
   padding: 2rem 0 0 0;
   width: 288px;
   line-height: 50px;
-  color: white;
   border: 0;
   margin-bottom: 1.9rem;
   align-self: center;
@@ -1033,7 +1077,6 @@ p {
   padding: 2rem 0 0 0;
   width: 288px;
   line-height: 50px;
-  color: white;
   border: 0;
   margin-bottom: 1.9rem;
   align-self: center;
@@ -1052,8 +1095,6 @@ ul.language {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
 }
 
 h3.button_project {
@@ -1065,7 +1106,7 @@ h3.button_project {
 }
 
 .submit {
-  font: Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -1088,31 +1129,12 @@ h3.button_project {
   border: 2px solid #1a2236;
 }
 
-footer button {
-  background-color: #1a2236;
-  width: 258px;
-  height: 44px;
-  text-align: left;
-  border: none;
-  margin-bottom: 2rem;
-}
-
-footer button h4 {
-  font-family: Poppins, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #92dcdc;
-  margin-left: 3rem;
-  margin-bottom: 2rem;
-  padding: 15px 0 0 0;
-}
-
 .social-media {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
 }
+
 .social-media li {
   flex-direction: row;
   margin-bottom: 2rem;
@@ -1125,4 +1147,243 @@ footer button h4 {
 
 input:focus {
   box-shadow: 0 0 3px 1px lightgray;
+}
+
+@media screen and (max-width: 490px) {
+  #nopopup {
+    display: none;
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    justify-content: left;
+    transition: top 1s ease;
+    background-color: white;
+    list-style: none;
+    overflow: auto;
+  }
+
+  .closePop {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  .popup ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    font-size: 13px;
+    gap: 0.7rem;
+  }
+
+  .h2-pop {
+    font-size: 20px;
+    margin-top: 3rem;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .lines li {
+    font-family: poppins, sans-serif;
+    font-size: 10.3px;
+    line-height: 80%;
+    border: 1px solid #000;
+    padding: 0.3rem 0.4rem 0.2rem 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .p-pop {
+    margin-top: 2rem;
+    font-family: poppins, sans-serif;
+    align-self: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2rem;
+  }
+
+  #bot {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-pop {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: none transparent;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 246px;
+    height: 51px;
+    align-self: center;
+  }
+
+  .button-pop:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+  }
+
+  .button-pop:active {
+    background: #000;
+    color: #fff;
+    border: 2px solid lightgray;
+  }
+
+  .pass {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 491px) {
+  #nopopup {
+    display: none;
+  }
+
+  .popup {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: left;
+    transition: top 1s ease;
+    background-color: white;
+    list-style: none;
+    margin: 5rem;
+    padding: 4rem;
+    padding-top: 1rem;
+    z-index: 15;
+    border-radius: 1px;
+    border: 1px solid #000;
+    overflow: auto;
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.884);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  .closePop {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 70px;
+  }
+
+  .popup ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    font-size: 13px;
+    gap: 0.7rem;
+  }
+
+  .h2-pop {
+    font-size: 60px;
+    margin-top: 3rem;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .lines li {
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    line-height: 80%;
+    border: 1px solid #000;
+    padding: 0.3rem 0.4rem 0.2rem 0.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .p-pop {
+    margin-top: 2rem;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  #bot {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 3rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .button-pop {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: none transparent;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    width: 246px;
+    height: 51px;
+  }
+
+  .button-pop:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+  }
+
+  .button-pop:active {
+    background: #000;
+    color: #fff;
+    border: 2px solid lightgray;
+  }
+
+  .pass {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .prev {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    background: none transparent;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    width: 246px;
+    height: 51px;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
 }
