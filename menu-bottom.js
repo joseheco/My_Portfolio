@@ -41,10 +41,10 @@ const regExp = /^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g;
 
 form.addEventListener('submit', (event) => {
   if (regExp.test(email.value)) {
-  error.innerHTML = '';
-} else {
-  event.preventDefault();
-  error.innerHTML = 'Your email address is not valid';
-  error.style.bottom = '';
-}
+    error.innerHTML = '';
+  } else {
+    event.preventDefault();
+    error.innerHTML = 'Your email address is not valid';
+    error.style.bottom = '';
+  }
 });
