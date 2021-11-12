@@ -48,3 +48,5 @@ form.addEventListener('submit', (event) => {
     error.style.bottom = '';
   }
 });
+
+const name = document.getElementById("name");
