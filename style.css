@@ -510,6 +510,12 @@
     padding-top: 15px;
     padding-left: 15px;
   }
+
+  .errorMail {
+    position: fixed;
+    top: 68%;
+    left: 44%;
+  }
 }
 
 /* Mobil display */
@@ -847,6 +853,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .errorMail {
+    display:flex;
+    justify-content: center;
   }
 }
 
