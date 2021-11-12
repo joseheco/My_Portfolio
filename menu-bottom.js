@@ -49,4 +49,5 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const name = document.getElementById("name");
+const inputName = document.getElementById("name");
+localStorage.setItem("name", inputName.value);
