@@ -50,4 +50,6 @@ form.addEventListener('submit', (event) => {
 });
 
 const inputName = document.getElementById("name");
+const inputEmail = document.getElementById("emailForm");
+const inputMessage = document.getElementById("message");
 localStorage.setItem("name", inputName.value);
