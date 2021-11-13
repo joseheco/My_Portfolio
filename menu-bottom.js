@@ -49,7 +49,42 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-const inputName = document.getElementById("name");
-const inputEmail = document.getElementById("emailForm");
-const inputMessage = document.getElementById("message");
-localStorage.setItem("name", inputName.value);
+const inputName = document.getElementById('nameForm');
+const inputEmail = document.getElementById('emailForm');
+const inputMessage = document.getElementById('commentForm');
+
+function catchValue() {
+  const saveInfo = JSON.stringify({
+    name: inputName.value.trim(),
+    email: inputEmail.value.trim(),
+    comment: inputMessage.value.trim(),
+  });
+  localStorage.setItem('storeInfo', saveInfo);
+}
+
+function enterData() {
+  const storeData = JSON.parse(localStorage.getItem('storeInfo'));
+  inputName.value = storeData.name;
+  inputEmail.value = storeData.email;
+  inputMessage.value = storeData.comment;
+}
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (messa) {
+    return messa instanceof DOMException; 
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  form.addEventListener('change', catchValue);
+  window.onload = enterData();
+} else {
+  //no data
+}
