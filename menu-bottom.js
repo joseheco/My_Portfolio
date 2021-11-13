@@ -78,7 +78,7 @@ function storageAvailable(type) {
     storage.removeItem(x);
     return true;
   } catch (messa) {
-    return messa instanceof DOMException; 
+    return messa instanceof DOMException;
   }
 }
 
@@ -86,5 +86,5 @@ if (storageAvailable('localStorage')) {
   form.addEventListener('change', catchValue);
   window.onload = enterData();
 } else {
-  //no data
+  //  no data
 }
