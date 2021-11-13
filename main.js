@@ -81,7 +81,7 @@ function createProjects(cards) {
 const modalWindow = document.querySelector('.modal-container');
 const modalcross = document.querySelector('.modal-closer');
 
-function showPopup(cards) { 
+function showPopup(cards) { // problems with vars
   modalWindow.classList.replace('hidden', 'show_popup');
   const title = document.querySelector('.modal-title');
   const image = document.querySelector('.modal-img');
@@ -108,7 +108,6 @@ function closePopup() {
   while (techlist.firstChild) {
     techlist.removeChild(techlist.firstChild);
   }
-  body.classList.remove('no-scroll');
 }
 
 modalcross.addEventListener('click', closePopup);
