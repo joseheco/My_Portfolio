@@ -43,10 +43,8 @@ const projects = [
   },
 ];
 
-
 let num = projects.length;
 const main = document.querySelector('#project-title');
-
 
 function createProjects(cards) {
   const card = document.createElement('section');
