@@ -138,33 +138,33 @@
     margin-bottom: 7.2rem;
   }
 
-  .first-project {
+  .project-1 {
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
     margin-top: 5.3rem;
   }
 
-  .second-project {
+  .project-2 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     margin-top: 10.6rem;
   }
 
-  .third-project {
+  .project-3 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 3;
   }
 
-  .fourth-project {
+  .project-4 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 5;
   }
 
-  .five-project {
+  .project-5 {
     grid-column-start: 6;
     grid-column-end: 8;
     grid-row-start: 2;
@@ -172,7 +172,7 @@
     margin-top: 3rem;
   }
 
-  .six-project {
+  .project-6 {
     display: none;
   }
 
@@ -509,6 +509,12 @@
     border-radius: 4px;
     padding-top: 15px;
     padding-left: 15px;
+  }
+
+  .errorMail {
+    position: fixed;
+    top: 68%;
+    left: 44%;
   }
 }
 
@@ -847,6 +853,11 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .errorMail {
+    display: flex;
+    justify-content: center;
   }
 }
 

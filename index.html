@@ -61,137 +61,13 @@
       </section>
       <a class="bottom-img"></a>
       <section class="main" id="project">
-        <h2>Projects</h2>
+        <h2 id="project-title">Projects</h2>
         <a class="project-geo-1"></a>
         <a class="projec-puntos"></a>
         <a class="project-geo-3"></a>
         <a class="project-geo-circle"></a>
         <a class="project-geo-6"></a>
         <a class="project-geo-7"></a>
-        <!-- change the sections to article tags-->
-        <section class="first-project">
-          <img
-            class="lap-images_1"
-            src="./images/laptop_1.png"
-            alt="laptop-project-1"
-          />
-          <img
-            class="lap-images-1"
-            src="./images/laptop-1-desktop.png"
-            alt="laptop-project-1"
-          />
-          <div class="project-1">
-            <h3>Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
-            </ul>
-            <button type="button" class="button-project">
-              See this project ➔
-            </button>
-          </div>
-        </section>
-        <section class="second-project">
-          <img
-            class="lap-images"
-            src="./images/laptop_2.png"
-            alt="laptop-project-2"
-          />
-          <div class="project">
-            <h3>Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
-            </ul>
-            <button type="button" class="button-project">
-              See this project ➔
-            </button>
-          </div>
-        </section>
-        <section class="third-project">
-          <img
-            class="lap-images_3"
-            src="./images/laptop_3.png"
-            alt="laptop-project-3"
-          />
-          <img
-            class="lap-images-3"
-            src="./images/laptop_3.png"
-            alt="laptop-project-3"
-          />
-          <div class="project">
-            <h3>Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
-            </ul>
-            <button type="button" class="button-project">
-              See this project ➔
-            </button>
-          </div>
-        </section>
-        <section class="fourth-project">
-          <img
-            class="lap-images"
-            src="./images/laptop_4.png"
-            alt="laptop-project-4"
-          />
-          <div class="project">
-            <h3>Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
-            </ul>
-            <button type="button" class="button-project">
-              See this project ➔
-            </button>
-          </div>
-        </section>
-        <section class="five-project">
-          <img
-            class="lap-images-5"
-            src="./images/laptop_5.png"
-            alt="laptop-project-5"
-          />
-          <img
-            class="lap-images_5"
-            src="./images/laptop_5.png"
-            alt="laptop-project-5"
-          />
-          <div class="project-5">
-            <h3>Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
-            </ul>
-            <button type="button" class="button-project">
-              See this project ➔
-            </button>
-          </div>
-        </section>
-        <section class="six-project">
-          <img
-            class="lap-images"
-            src="./images/laptop_6.png"
-            alt="laptop-project-6"
-          />
-          <div class="project">
-            <h3>Project name goes here</h3>
-            <ul class="flex">
-              <li>HTML/CSS</li>
-              <li>Ruby on Rails</li>
-              <li>JavaScript</li>
-            </ul>
-            <button data-modal-target="#modal" type="button" class="button-project">
-              See this project ➔
-            </button>
-          </div>
-        </section>
       </section>
     </main>
     
@@ -320,6 +196,7 @@
           <li class="mid-email">
             <label id="email">Your email</label>
             <input
+              id="emailForm"
               class="mid"
               type="email"
               name="email-address"
@@ -336,6 +213,7 @@
               required
             ></textarea>
           </li>
+          <li><p class="errorMail"></p></li>
           <li class="mid-submit">
             <input
               class="submit"
@@ -382,6 +260,7 @@
       </ul>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
   <script src="menu-bottom.js"></script>
   </body>
 </html>
