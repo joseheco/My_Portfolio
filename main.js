@@ -81,7 +81,7 @@ function createProjects(cards) {
 const modalWindow = document.querySelector('.modal-container');
 const modalcross = document.querySelector('.modal-closer');
 
-function showPopup(cards) { // eslint-disable-line no-unused-vars
+function showPopup(cards) { 
   modalWindow.classList.replace('hidden', 'show_popup');
   const title = document.querySelector('.modal-title');
   const image = document.querySelector('.modal-img');
