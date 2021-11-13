@@ -146,7 +146,6 @@
     display: flex;
     flex-direction: column;
     background-color: black;
-    margin-top: -0.4rem;
   }
 
   .project-2 {
@@ -176,7 +175,6 @@
     margin-top: 3rem;
     align-self: center;
     background-color: black;
-    margin-top: -0.4rem;
   }
 
   .project-6 {
