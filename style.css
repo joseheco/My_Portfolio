@@ -572,6 +572,25 @@
     text-decoration: none;
   }
 
+  .show_popup li {
+    border: #1a2236 solid 1px;
+    background-color: #fff;
+  }
+
+  .show_popup a {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    border: solid 1px #1a2236;
+    padding: 10px 20px;
+    width: 70%;
+    margin-top: 29px;
+  }
+
   nav .mainMenu li {
     margin-bottom: 2.5rem;
     background: transparent;
@@ -738,6 +757,17 @@
     margin-top: 4rem;
   }
 
+  .show_popup p {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 100%;
+  }
+
   #contact-me p {
     align-self: center;
     width: 288px;
@@ -864,7 +894,7 @@
     background-color: white;
     padding: 20px;
   }
-  
+
   .show_popup h2 {
     font-family: Poppins, sans-serif;
     font-size: 20px;
@@ -875,49 +905,19 @@
     text-align: left;
     padding-left: 0;
   }
-  
-  .show_popup li {
-    border: #1a2236 solid 1px;
-    background-color: #fff;
-  }
-  
+
   .show_popup .modal-buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  
-  .show_popup a {
-    font-family: Poppins, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0;
-    text-align: center;
-    border: solid 1px #1a2236;
-    padding: 10px 20px;
-    width: 70%;
-    margin-top: 29px;
-  }
-  
+
   .modal-closer {
     display: block;
     position: absolute;
     top: 15px;
     right: 30px;
-  }
-  
-  .show_popup p {
-    font-family: Poppins, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0;
-    text-align: left;
-    width: 100%;
   }
 }
 
@@ -1277,6 +1277,7 @@ input:focus {
     font-size: 18px;
     margin-bottom: 2rem;
   }
+
  .modal-description {
    margin-top: 1rem;
  }
@@ -1367,7 +1368,7 @@ input:focus {
     right: 30px;
   }
 
-  /*#overlay {
+  /* #overlay {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -1381,7 +1382,7 @@ input:focus {
   #overlay.active {
     pointer-events: all;
     opacity: 1;
-  }*/
+  } */
 
   .modal-tech {
     display: flex;
@@ -1408,7 +1409,7 @@ input:focus {
     margin-bottom: 0.5rem;
   }
 
-  .modal-description{
+  .modal-description {
     margin-top: 2rem;
     font-family: poppins, sans-serif;
     font-weight: 400;
