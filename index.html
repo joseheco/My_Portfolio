@@ -34,6 +34,23 @@
     <title>My Portfolio</title>
   </head>
   <body>
+
+    <div class="modal-container hidden">
+      <div class="modal-element">
+        <div class="modal-closer"><i class="fa fa-times fa-2x"></i></div>
+        <h2 class="modal-title">Project name goes here</h2>
+        <ul class="modal-tech"></ul>
+        <img class="modal-img" src="#" alt="project picture">
+        <p class="modal-description"></p>
+      </div>
+      <div class="modal-buttons">
+        <a id="modal-live" class="button-secondary">&nbsp; See Live &nbsp; &nbsp; &nbsp;<i class="fas fa-caret-square-right fa-lg"></i></a>
+        <a id="modal-source" class="button-secondary">&nbsp; See source &nbsp;<i class="fab fa-github fa-lg"></i></a>
+      </div>
+      <div id="overlay"></div>
+    </div> 
+
+
     <header>
       <nav>
         <ul class="mainMenu" id="img-menu-2">
@@ -70,58 +87,6 @@
         <a class="project-geo-7"></a>
       </section>
     </main>
-    
-    <div class="popup" id="nopopup">
-      <h2 class="h2-pop">Project name goes here</h2>
-      <div class="closePop"><i class="fa fa-times fa-2x"></i></div>
-      <ul class="lines">
-        <li>HTML/CSS</li>
-        <li>Ruby on Rails</li>
-        <li>JavaScript</li>
-      </ul>   
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./images/laptop_2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/laptop_4.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./images/laptop_6.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  
-  
-      <p class="p-pop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrud exercitation ullamco laboris nisi
-        <br>
-        <br>
-        Ut aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-      </p>
-      <div id="bot">
-        <button type="button" class="button-pop">&nbsp; See Live &nbsp; &nbsp; &nbsp;<i class="fas fa-caret-square-right fa-lg"></i></button>
-        <button type="button" class="button-pop">&nbsp; See source &nbsp;<i class="fab fa-github fa-lg"></i></button>
-      </div> 
-      <div class="pass">
-        <button type="button" class="prev"><i class="fas fa-arrow-left"></i>&nbsp; Previous project</button>
-        <button type="button" class="prev">Previous project  &nbsp;<i class="fas fa-arrow-right"></i></button>
-      </div>   
-    </div>
-    <div id="overlay"></div>
-
     <section class="about">
       <section class="information" id="about-menu">
         <h2>About</h2>
