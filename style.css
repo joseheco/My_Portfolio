@@ -138,41 +138,46 @@
     margin-bottom: 7.2rem;
   }
 
-  .first-project {
+  .project-1 {
     grid-column-start: 4;
     grid-column-end: 8;
     grid-row-start: 1;
     margin-top: 5.3rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
   }
 
-  .second-project {
+  .project-2 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
     margin-top: 10.6rem;
   }
 
-  .third-project {
+  .project-3 {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 3;
   }
 
-  .fourth-project {
+  .project-4 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 5;
   }
 
-  .five-project {
+  .project-5 {
     grid-column-start: 6;
     grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: 3;
     margin-top: 3rem;
+    align-self: center;
+    background-color: black;
   }
 
-  .six-project {
+  .project-6 {
     display: none;
   }
 
@@ -287,13 +292,6 @@
     text-align: left;
   }
 
-  .project-1 {
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    margin-top: -0.4rem;
-  }
-
   .project-1 h3 {
     font-family: Poppins, sans-serif;
     font-size: 60px;
@@ -310,12 +308,6 @@
   .project-1 .flex {
     justify-content: flex-start;
     margin-left: 2rem;
-  }
-
-  .project-5 {
-    align-self: center;
-    background-color: black;
-    margin-top: -0.4rem;
   }
 
   .project-5 h3 {
@@ -855,9 +847,77 @@
     flex-direction: column;
   }
 
-  .errorMail {
+  .hidden {
+    display: none;
+  }
+
+  .show_popup {
+    overflow-y: auto;
+    z-index: 2;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .show_popup h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-left: 0;
+  }
+  
+  .show_popup li {
+    border: #1a2236 solid 1px;
+    background-color: #fff;
+  }
+  
+  .show_popup .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .show_popup a {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+    border: solid 1px #1a2236;
+    padding: 10px 20px;
+    width: 70%;
+    margin-top: 29px;
+  }
+  
+  .modal-closer {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+  
+  .show_popup p {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 100%;
   }
 }
 
@@ -873,6 +933,10 @@ h1 {
 
 p {
   font-family: Poppins, sans-serif;
+}
+
+.hidden {
+  display: none;
 }
 
 .lap-images_1 {
@@ -1180,7 +1244,7 @@ input:focus {
     right: 30px;
   }
 
-  .popup ul {
+  .modal-tech {
     display: flex;
     list-style: none;
     justify-content: flex-start;
@@ -1188,7 +1252,7 @@ input:focus {
     gap: 0.7rem;
   }
 
-  .h2-pop {
+  .modal-title {
     font-size: 20px;
     margin-top: 3rem;
     font-family: poppins, sans-serif;
@@ -1196,7 +1260,7 @@ input:focus {
     margin-bottom: 1.5rem;
   }
 
-  .lines li {
+  .modal-tech li {
     font-family: poppins, sans-serif;
     font-size: 10.3px;
     line-height: 80%;
@@ -1213,13 +1277,11 @@ input:focus {
     font-size: 18px;
     margin-bottom: 2rem;
   }
+ .modal-description {
+   margin-top: 1rem;
+ }
 
-  #bot {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .button-pop {
+  .button-secondary {
     font-family: poppins, sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -1231,15 +1293,17 @@ input:focus {
     width: 246px;
     height: 51px;
     align-self: center;
+    text-decoration: none;
+    color: black;
   }
 
-  .button-pop:hover {
+  .button-secondary:hover {
     background: #000;
     color: #fff;
     border: 1px solid #000;
   }
 
-  .button-pop:active {
+  .button-secondary:active {
     background: #000;
     color: #fff;
     border: 2px solid lightgray;
@@ -1251,11 +1315,8 @@ input:focus {
 }
 
 @media screen and (min-width: 491px) {
-  #nopopup {
-    display: none;
-  }
-
-  .popup {
+  
+  #popup {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1276,7 +1337,37 @@ input:focus {
     overflow: auto;
   }
 
-  #overlay {
+  .show_popup {
+    overflow-y: auto;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+    transition: top 1s ease;
+    background-color: white;
+    list-style: none;
+    margin-top: -2.5rem;
+    padding: 4rem;
+    padding-top: 1rem;
+    z-index: 15;
+    border-radius: 1px;
+    border: 1px solid #000;
+    overflow: auto;
+  }
+
+  .modal-closer {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  /*#overlay {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -1290,16 +1381,9 @@ input:focus {
   #overlay.active {
     pointer-events: all;
     opacity: 1;
-  }
+  }*/
 
-  .closePop {
-    display: block;
-    position: absolute;
-    top: 60px;
-    right: 70px;
-  }
-
-  .popup ul {
+  .modal-tech {
     display: flex;
     list-style: none;
     justify-content: flex-start;
@@ -1307,7 +1391,7 @@ input:focus {
     gap: 0.7rem;
   }
 
-  .h2-pop {
+  .modal-title {
     font-size: 60px;
     margin-top: 3rem;
     font-family: poppins, sans-serif;
@@ -1315,7 +1399,7 @@ input:focus {
     margin-bottom: 1.5rem;
   }
 
-  .lines li {
+  .modal-tech li {
     font-family: poppins, sans-serif;
     font-size: 20px;
     line-height: 80%;
@@ -1324,7 +1408,7 @@ input:focus {
     margin-bottom: 0.5rem;
   }
 
-  .p-pop {
+  .modal-description{
     margin-top: 2rem;
     font-family: poppins, sans-serif;
     font-weight: 400;
@@ -1334,16 +1418,18 @@ input:focus {
     margin-right: 7rem;
   }
 
-  #bot {
-    display: flex;
-    justify-content: flex-start;
-    text-align: center;
-    gap: 3rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
+  .modal-img {
+    width: 100%;
   }
 
-  .button-pop {
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .button-secondary {
     font-family: poppins, sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -1354,15 +1440,17 @@ input:focus {
     box-sizing: border-box;
     width: 246px;
     height: 51px;
+    text-decoration: none;
+    color: black;  
   }
 
-  .button-pop:hover {
+  .button-secondary:hover {
     background: #000;
     color: #fff;
     border: 1px solid #000;
   }
 
-  .button-pop:active {
+  .button-secondary:active {
     background: #000;
     color: #fff;
     border: 2px solid lightgray;
@@ -1373,17 +1461,9 @@ input:focus {
     justify-content: space-around;
   }
 
-  .prev {
-    font-family: poppins, sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    background: none transparent;
-    border: 1px solid transparent;
-    box-sizing: border-box;
-    width: 246px;
-    height: 51px;
-    margin-top: 4rem;
-    margin-bottom: 5rem;
+  .show_popup {
+    border: solid #1a2236 70px;
+    padding: 60px;
+    align-items: unset;
   }
 }
