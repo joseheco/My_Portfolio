@@ -49,7 +49,7 @@ const main = document.querySelector('#project-title');
 function createProjects(cards) {
   const card = document.createElement('section');
   card.className = `project-${num}`;
-  num += 1;
+  num -= 1;
   const img = document.createElement('img');
   img.className = 'lap-images';
   img.srcset = cards.images;
@@ -109,4 +109,4 @@ function closePopup() {
 }
 
 modalClose.addEventListener('click', closePopup);
-projects.reverse().forEach((cards) => createProjects(cards));
+projects.reserve().forEach((cards) => createProjects(cards));
