@@ -109,4 +109,4 @@ function closePopup() {
 }
 
 modalClose.addEventListener('click', closePopup);
-projects.reserve().forEach((cards) => createProjects(cards));
+projects.reverse().forEach((cards) => createProjects(cards));
