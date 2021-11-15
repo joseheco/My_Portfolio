@@ -102,9 +102,9 @@ function openPopup(cards) {
 
 function closePopup() {
   modalOpen.classList.replace('show_popup', 'hidden');
-  const techlist = document.querySelector('.modal-tech');
-  while (techlist.firstChild) {
-    techlist.removeChild(techlist.firstChild);
+  const languages = document.querySelector('.modal-tech');
+  while (languages.firstChild) {
+    languages.removeChild(languages.firstChild);
   }
 }
 
