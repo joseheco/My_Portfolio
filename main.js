@@ -49,7 +49,7 @@ const main = document.querySelector('#project-title');
 function createProjects(cards) {
   const card = document.createElement('section');
   card.className = `project-${num}`;
-  num -= 1;
+  num += 1;
   const img = document.createElement('img');
   img.className = 'lap-images';
   img.srcset = cards.images;
@@ -72,24 +72,22 @@ function createProjects(cards) {
   buttProject.type = 'button';
   buttProject.className = 'button-project';
   buttProject.textContent = 'See this project →';
-  buttProject.setAttribute('onclick', `showPopup(projects[${projects.indexOf(cards)}])`);
+  buttProject.setAttribute('onclick', `openPopup(projects[${projects.indexOf(cards)}])`);
   sectionTag.appendChild(buttProject);
 
   main.insertAdjacentElement('afterend', card);
 }
 
-const modalWindow = document.querySelector('.modal-container');
-const modalcross = document.querySelector('.modal-closer');
+const modalOpen = document.querySelector('.modal-container');
+const modalClose = document.querySelector('.modal-closer');
 
-function showPopup(cards) { // problems with vars
-  modalWindow.classList.replace('hidden', 'show_popup');
-  const title = document.querySelector('.modal-title');
+function openPopup(cards) {
+  modalOpen.classList.replace('hidden', 'show_popup');
   const image = document.querySelector('.modal-img');
   const description = document.querySelector('.modal-description');
-  const techlist = document.querySelector('.modal-tech');
+  const languages = document.querySelector('.modal-tech');
   const sourcelink = document.querySelector('#modal-source');
 
-  title.textContent = cards.name;
   image.srcset = cards.images;
   description.textContent = cards.description;
   sourcelink.setAttribute('href', cards.source);
@@ -98,17 +96,17 @@ function showPopup(cards) { // problems with vars
     const items = document.createElement('li');
     items.className = 'skill';
     items.textContent = value;
-    techlist.appendChild(items);
+    languages.appendChild(items);
   });
 }
 
 function closePopup() {
-  modalWindow.classList.replace('show_popup', 'hidden');
+  modalOpen.classList.replace('show_popup', 'hidden');
   const techlist = document.querySelector('.modal-tech');
   while (techlist.firstChild) {
     techlist.removeChild(techlist.firstChild);
   }
 }
 
-modalcross.addEventListener('click', closePopup);
+modalClose.addEventListener('click', closePopup);
 projects.reverse().forEach((cards) => createProjects(cards));
